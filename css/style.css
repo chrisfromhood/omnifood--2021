@@ -142,6 +142,45 @@ body {
 }
 
 /*************************/
+/* NAVIGATION*/
+/*************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: white;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+/*************************/
 /* HERO SECTION */
 /*************************/
 
@@ -201,4 +240,39 @@ body {
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
+}
+
+/*************************/
+/* HOW IT WORKS SECTION */
+/*************************/
+.section-how {
+  padding: 9.6px 0;
+  background-color: orangered;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+  grid-template-columns: repeat(2);
+}
+
+.section-how div {
+  padding: 100px;
+  font-size: 50px;
+}
+
+.section-how div:nth-child(1) {
+  background-color: aqua;
+}
+.section-how div:nth-child(2) {
+  background-color: rgb(41, 10, 216);
+}
+.section-how div:nth-child(3) {
+  background-color: rgb(174, 27, 233);
+}
+.section-how div:nth-child(4) {
+  background-color: rgb(201, 212, 40);
 }
